@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tpDOM.css">
+    <script src="tpDOM.js" defer></script>
+    <title>Tp DOM</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <div id="text">
+            <h1>PRONOTE PoP School</h1>
+            <div>
+                <button id="addDevoir">ajouter devoir</button>
+                <button id="addEleve">ajouter Eleve</button>
+            </div>
+        </div>
+
+        <div id="notation">
+            <table id="table">
+                <tr class="test">
+                    <td>Mode</td>
+                    <td> <input type="button" class="toggleMode" value="mode" />
+                    </td>
+                    <td> <input type="button" class="toggleMode" value="mode" />
+                    </td>
+                    <td> <input type="button" class="toggleMode" value="mode" />
+                    </td>
+                </tr>
+
+                <tr class="test">
+                    <td>Nom</td>
+                    <td><input type="button" class="delDevoir" value="X"><span contenteditable spellcheck="false" class="edit">Devoir</span></td>
+                    <td><input type="button" class="delDevoir" value="X"><span contenteditable spellcheck="false" class="edit">Devoir</span></td>
+                    <td><input type="button" class="delDevoir" value="X"><span contenteditable spellcheck="false" class="edit">Devoir</span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="delEleve" value="X"><span contenteditable spellcheck="false" class="edit">Eleve</span></td>
+                    <!-- type tel pour eviter les fleches sur les cotés des inputs-->
+                    <td><input type="tel" class="note" hidden></td>
+                    <td><input type="tel" class="note" hidden></td>
+                    <td><input type="tel" class="note" hidden></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="delEleve" value="X"><span contenteditable spellcheck="false" class="edit">Eleve</span></td>
+                    <td><input type="tel" class="note" hidden></td>
+                    <td><input type="tel" class="note" hidden></td>
+                    <td><input type="tel" class="note" hidden></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="delEleve" value="X"><span contenteditable spellcheck="false" class="edit">Eleve</span></td>
+                    <td><input type="tel" class="note" hidden></td>
+                    <td><input type="tel" class="note" hidden></td>
+                    <td><input type="tel" class="note" hidden></td>
+                </tr>
+                
+                <tr class="test">
+                    <td><input type="button" id="resetAll" value="Reset all"></td>
+                    <td><input type="button" class="resetDevoir" value="Reset"></td>
+                    <td><input type="button" class="resetDevoir" value="Reset"></td>
+                    <td><input type="button" class="resetDevoir" value="Reset"></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</body>
+
+</html>
